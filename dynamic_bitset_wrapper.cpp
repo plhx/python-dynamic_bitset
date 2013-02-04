@@ -1,3 +1,4 @@
+#include <string>
 #include <boost/python.hpp>
 #include <boost/python/class.hpp>
 #include <boost/python/operators.hpp>
@@ -11,6 +12,7 @@ namespace python = boost::python;
 
 BOOST_PYTHON_MODULE(dynamic_bitset){
 	python::class_<boost::dynamic_bitset<> >("dynamic_bitset",python::init<size_t,long>())
+		.def(python::init<const std::string &>())
 		.def("resize",&boost::dynamic_bitset<>::resize)
 		.def("clear",&boost::dynamic_bitset<>::clear)
 		.def("push_back",&boost::dynamic_bitset<>::push_back)
