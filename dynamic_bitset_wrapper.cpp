@@ -13,6 +13,7 @@ namespace python = boost::python;
 BOOST_PYTHON_MODULE(dynamic_bitset){
 	python::class_<boost::dynamic_bitset<> >("dynamic_bitset",python::init<size_t,long>())
 		.def(python::init<const std::string &>())
+		.def("swap",&boost::dynamic_bitset<>::swap)
 		.def("resize",&boost::dynamic_bitset<>::resize)
 		.def("clear",&boost::dynamic_bitset<>::clear)
 		.def("push_back",&boost::dynamic_bitset<>::push_back)

@@ -1,16 +1,19 @@
 import dynamic_bitset
 
+def B(x):
+	s = ''
+	for i in range(len(x)):
+		s = str(int(x[i])) + s
+	return s
+	
+
 a = dynamic_bitset.dynamic_bitset(5,4)
 b = dynamic_bitset.dynamic_bitset("00001")
 
 a |= b
 
-s = ''
-for i in range(len(a)):
-	s = str(int(a[i])) + s
+a.swap(b)
 
-if a:
-	print 'non zero'
-
-print s
+print B(a)
+print B(b)
 
