@@ -1,4 +1,4 @@
-Help on module dynamic_bitset:
+Help on module dynamic\_bitset:
 
 NAME
     dynamic_bitset
