@@ -1,12 +1,14 @@
 Help on module dynamic\_bitset:
+===============================
 
-NAME
-    dynamic_bitset
+# NAME
+    > dynamic_bitset
 
-FILE
-    /home/ph/git/python-dynamic_bitset/dynamic_bitset.so
+# FILE
+    > dynamic_bitset.so
 
-CLASSES
+# CLASSES
+
     Boost.Python.instance(__builtin__.object)
         dynamic_bitset
     
