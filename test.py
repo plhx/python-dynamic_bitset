@@ -9,5 +9,3 @@ a.swap(b)
 
 print a,b
 
-help(dynamic_bitset)
-
