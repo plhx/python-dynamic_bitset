@@ -40,6 +40,7 @@ BOOST_PYTHON_MODULE(dynamic_bitset){
 		.def("find_first",&boost::dynamic_bitset<>::find_first)
 		.def("find_next",&boost::dynamic_bitset<>::find_next)
 		.def(~python::self)
+		.def(str(python::self))
 		.def(python::self == python::self)
 		.def(python::self != python::self)
 		.def(python::self <= python::self)
