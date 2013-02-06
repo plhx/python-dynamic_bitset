@@ -48,5 +48,6 @@ BOOST_PYTHON_MODULE(dynamic_bitset){
 		.def(python::self < python::self)
 		.def(python::self > python::self)
 	;
+	python::scope().attr("npos") = boost::dynamic_bitset<>::npos;
 }
 
